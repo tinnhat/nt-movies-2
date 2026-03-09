@@ -37,7 +37,7 @@ tmdbClient.interceptors.request.use(
 
 // Response interceptor for error handling
 tmdbClient.interceptors.response.use(
-  (response) => response.data,
+  (response) => response,
   (error) => {
     if (error.response?.status === 429) {
       console.error('TMDB API Rate limit exceeded');
