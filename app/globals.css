@@ -58,6 +58,13 @@
   }
 }
 
+@layer components {
+  .container {
+    @apply w-full mx-auto;
+    max-width: 1280px;
+  }
+}
+
 /* NProgress Loading Bar Styles */
 #nprogress {
   pointer-events: none;
